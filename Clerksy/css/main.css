@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../fonts/noto-sans-v27-latin-500.woff2);
+}
+@font-face {
+    font-family: 'Almendra SC';
+    src: url(../fonts/almendra-sc-v25-latin-regular.woff);
+}
+@font-face {
+    font-family: 'Itim', cursive;
+    src: url(../fonts/Itim-Regular.ttf);
+}
+h1, h2, h3 {
+    font-family: 'Itim', cursive;
+}
+.contianer {
+    width: 1180px;
+    margin: 0 auto;
+}
+nav {
+    width: 1440px;
+    height: 98px;
+    background: #163A24;
+    margin: auto;
+   display: flex;
+   align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu li, ul {
+    display: inline-block;
+    margin-right: 40px;
+}
+.menu a {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FBFAF7;
+}
+button {
+    min-width: 141px;
+    max-width: 300px;
+    height: 52px;
+    border: none;
+    background: #198C36;
+    border-radius: 160px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FBFAF7;
+    padding: 15px;
+}
+button:hover {
+    background-color: #ffff;
+    color: #198C36;
+    border: 1px solid #198C36;
+    transition: .5s;
+    transform: scale(1.2, 1.2);
+}
+.hero {
+    margin: auto;
+    background-image: url('../images/Group\ 2\ \(3\).png');
+    width: 1440px;
+    height: 544px;
+}
+.hero__box {
+    padding-top: 120px;
+    width: 500px;
+    min-height: 100px;
+}
+.hero__box h1 {
+    width: 391px;
+    
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    color: #FBFAF7;
+}
+.hero__box p{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    color: #FBFAF7;
+    width: 400px;
+    padding-top: 18px;
+}
+.human {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.human__box {
+    width: 490px;
+    height: 490px;
+}
+.human__box h2 {
+    margin: 150px 0 27px 0;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+}
+.human__box p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Noto Sans';
+    color: #163A24;
+}
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+.section__h2 {
+    text-align: center;
+    margin: 150px 0 60px 0;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+}
+.product {
+    margin:  auto ;
+    margin-top: 50px;
+    background: #163A24;
+    width: 1440px;
+    height: 568px;
+}
+.product h2 {
+    text-align: center;
+    padding: 66px 0 90px 0;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #ffff;
+}
+.product__box {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.product__box img {
+    padding-bottom: 28px;
+}
+.product__box p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Noto Sans';
+    color: rgb(255, 255, 255);
+}
+.images {
+    margin: auto;
+    text-align: center;
+    width: 1440px;
+    height: 775px;
+    background: #F2EFE6;
+}
+.images h2 {
+    padding: 114px 0 27px 0;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+}
+.images p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Noto Sans';
+}
+
+.scan {
+    width: 492px;
+    height: 432px;
+}
+
+.scan__div {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.scan h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+    padding-left: 86px;
+}
+.scan:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scan p {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #163A24;
+    padding: 20px 0 0 70px;
+}
+
+.interest__box {
+    width: 1180px;
+    display: flex;
+    justify-content: space-between;
+}
+.interest__box__child {
+    width: 352px;
+    height: 393px;
+    box-shadow: 5px 5px 20px #E9E4D5;
+    padding: 40px;
+}
+.interest__box__child:nth-child(2) {
+    height: 430px;
+}
+
+.interest h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+    color: #163A24;
+    margin-top: 100px;
+}
+.span {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    display: inline-block;
+    padding: 20px 0 50px 400px;
+}
+.interest__box__child h3 {
+    font-family: 'Recoleta';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #163A24;
+    padding: 30px 0;
+}
+.interest__box__child:hover {
+    transform: scale(1.2, 1.2);
+    transition: .8s;
+}
+.interest__box li{
+    list-style: circle;
+    text-decoration: inherit;
+    padding-bottom: 20px;
+}
+.easy {
+    width: 1440px;
+    height: 602px;
+    background: #F2EFE6;
+    margin: 100px auto;
+}
+.easy h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+    color: #163A24;
+    padding-top: 114px;
+}
+.spann {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    display: inline-block;
+    padding: 30px 0 50px 320px;
+    color: #163A24;
+}
+.easy__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.easy__box p {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #163A24;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.easy__box b {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 80px 0 0 59px;
+    color: #163A24;
+}
+.easy__btn {
+    margin-left: 463px;
+}
+.resurs {
+    display: flex;
+    justify-content: space-around;
+}
+.resurs h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+}
+.resurs p {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #163A24;
+}
+.resurs__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 492px;
+    height: 502px;
+    row-gap: 20px;
+}
+.resurs__btn {
+    width: 191px;
+}
+.discovery {
+    width: 1440px;
+    height: 415px;
+    background-image: url('../images/Group\ 2\ \(4\).png');
+    margin: 0px auto;
+    text-align: center;
+}
+.discovery h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #FBFAF7;
+    padding: 114px 0 26px 0;
+}
+.discovery p {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FBFAF7;
+    padding-bottom: 20px;
+}
+.discovery button {
+    background: #FAB5A0;
+    color: black;
+    font-family: 'Noto Sans';
+}
+.discovery__btn:hover {
+    background-color: #163A24;
+    color: #ffff;
+}
+.stay {
+    width: 1440px;
+    height: 240px;
+    background-color: #F2EFE6;
+    margin: auto;
+}
+.stay h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+}
+.stay__child {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px;
+}
+.stay__child p {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #163A24;
+    padding-top: 20px;
+}
+.stay__box input {
+    width: 533px;
+    height: 53px;
+    background: #FFFFFF;
+    border: 1px solid #F2EFE6;
+    border-radius: 255px;
+    margin-bottom: 20px;
+}
+.stay__form {
+    position: relative;
+}
+.stay__form button {
+    position: absolute;
+    right: 1px;
+}
+.stay__box span {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #163A24;
+}
+span:last-child {
+    color: #198C36;
+}
+.footer__logo {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__logo p {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #163A24;
+}
+.footer__logo li {
+    padding-left: 15px;
+    display: inline-block;
+    color: #198C36;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+.footer__logo h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 54px;
+    color: #163A24;
+}
